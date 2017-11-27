@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FF587C761FC9BEA6008825D9 /* User_Defaults_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF587C6C1FC9BEA6008825D9 /* User_Defaults_Helper.framework */; };
-		FF587C7B1FC9BEA6008825D9 /* User_Defaults_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF587C7A1FC9BEA6008825D9 /* User_Defaults_HelperTests.swift */; };
 		FF587C7D1FC9BEA6008825D9 /* User_Defaults_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = FF587C6F1FC9BEA6008825D9 /* User_Defaults_Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF587C871FC9BED8008825D9 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF587C861FC9BED8008825D9 /* UserDefaultsHelper.swift */; };
 /* End PBXBuildFile section */
@@ -28,8 +27,6 @@
 		FF587C6F1FC9BEA6008825D9 /* User_Defaults_Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User_Defaults_Helper.h; sourceTree = "<group>"; };
 		FF587C701FC9BEA6008825D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF587C751FC9BEA6008825D9 /* User Defaults HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "User Defaults HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF587C7A1FC9BEA6008825D9 /* User_Defaults_HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User_Defaults_HelperTests.swift; sourceTree = "<group>"; };
-		FF587C7C1FC9BEA6008825D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF587C861FC9BED8008825D9 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				FF587C6E1FC9BEA6008825D9 /* User Defaults Helper */,
-				FF587C791FC9BEA6008825D9 /* User Defaults HelperTests */,
 				FF587C6D1FC9BEA6008825D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,15 +74,6 @@
 				FF587C861FC9BED8008825D9 /* UserDefaultsHelper.swift */,
 			);
 			path = "User Defaults Helper";
-			sourceTree = "<group>";
-		};
-		FF587C791FC9BEA6008825D9 /* User Defaults HelperTests */ = {
-			isa = PBXGroup;
-			children = (
-				FF587C7A1FC9BEA6008825D9 /* User_Defaults_HelperTests.swift */,
-				FF587C7C1FC9BEA6008825D9 /* Info.plist */,
-			);
-			path = "User Defaults HelperTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +195,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF587C7B1FC9BEA6008825D9 /* User_Defaults_HelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
