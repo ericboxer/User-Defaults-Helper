@@ -13,9 +13,19 @@ import Foundation
  */
 class UserDefaultsHelper {
     
-    
-    // Singletoned
+    // Singletoned!
     static let instance = UserDefaultsHelper()
+    
+    // Because subscripting makes everything easier
+    subscript(index: String) -> String {
+        get {
+            return self.applicationSettings[index] as! String
+        }
+        set(newValue) {
+            self.addSetting(key: index, value: newValue)
+            self.saveDefaults()
+        }
+    }
     
     // MARK: Enum Defs
     
