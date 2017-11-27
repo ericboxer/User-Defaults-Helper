@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import User_Defaults_Helper
+@testable import UserDefaultsHelper()
 
 class User_Defaults_HelperTests: XCTestCase {
     

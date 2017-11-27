@@ -10,6 +10,7 @@
 		FF587C761FC9BEA6008825D9 /* User_Defaults_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF587C6C1FC9BEA6008825D9 /* User_Defaults_Helper.framework */; };
 		FF587C7B1FC9BEA6008825D9 /* User_Defaults_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF587C7A1FC9BEA6008825D9 /* User_Defaults_HelperTests.swift */; };
 		FF587C7D1FC9BEA6008825D9 /* User_Defaults_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = FF587C6F1FC9BEA6008825D9 /* User_Defaults_Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF587C871FC9BED8008825D9 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF587C861FC9BED8008825D9 /* UserDefaultsHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		FF587C751FC9BEA6008825D9 /* User Defaults HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "User Defaults HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF587C7A1FC9BEA6008825D9 /* User_Defaults_HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User_Defaults_HelperTests.swift; sourceTree = "<group>"; };
 		FF587C7C1FC9BEA6008825D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF587C861FC9BED8008825D9 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				FF587C6F1FC9BEA6008825D9 /* User_Defaults_Helper.h */,
 				FF587C701FC9BEA6008825D9 /* Info.plist */,
+				FF587C861FC9BED8008825D9 /* UserDefaultsHelper.swift */,
 			);
 			path = "User Defaults Helper";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					FF587C6B1FC9BEA6008825D9 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					FF587C741FC9BEA6008825D9 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF587C871FC9BED8008825D9 /* UserDefaultsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +338,7 @@
 		FF587C811FC9BEA6008825D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ericboxer.User-Defaults-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -354,6 +361,7 @@
 		FF587C821FC9BEA6008825D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -375,6 +383,7 @@
 		FF587C841FC9BEA6008825D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "User Defaults HelperTests/Info.plist";
@@ -388,6 +397,7 @@
 		FF587C851FC9BEA6008825D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "User Defaults HelperTests/Info.plist";
