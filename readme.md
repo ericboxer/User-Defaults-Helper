@@ -1,5 +1,6 @@
-# User Defaults Helper [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+# User Defaults Helper 
 ### A utility for standarzing UserDefaults in Swift
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ---
 UDH helps keep track of UserDefaults programatically and helps standardize how things are stored making perisistance super simple
 
@@ -40,12 +41,13 @@ UDH.removeDefaults()
 
 Todos
 ---
-- Make the code look prettier
+- Make the code look prettierer
+- Add function to remove single attribute - Still needs testing
 - Get the internal enums working to help standardization
 - Clean up the variables... more private stuff
-- Build Framework
+- ~~Build Framework~~
 - Make Cocoapods Compatable
-- Make Carthage Compatable
+- ~~Make Carthage Compatable~~
 
 
 The MIT License (MIT)

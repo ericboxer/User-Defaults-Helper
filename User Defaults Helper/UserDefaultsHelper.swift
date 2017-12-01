@@ -22,7 +22,12 @@ class UserDefaultsHelper {
             return self.applicationSettings[index] as! String
         }
         set(newValue) {
-            self.addSetting(key: index, value: newValue)
+            // If newValue is empty string, remove the key.
+            if newValue != "" {
+                self.addSetting(key: index, value: newValue)
+            } else {
+                self.removeDefault(key: newValue)
+            }
             self.saveDefaults()
         }
     }
@@ -93,6 +98,15 @@ class UserDefaultsHelper {
     }
     
     /**
+     Remove a single defualt from UserDefaults
+     
+     - parameter key: Key to be removed
+     */
+    func removeDefault(key: String){
+        applicationSettings.removeValue(forKey: key)
+    }
+    
+    /**
      Stages settings locally for storage to UserDefaults (UserSettings)
      
      - parameter key: UserDefautls Key
@@ -104,7 +118,7 @@ class UserDefaultsHelper {
     }
     
     /**
-        Returns the current version number
+     Returns the current version number
      */
     func version() -> String{
         return _bundleVersion
