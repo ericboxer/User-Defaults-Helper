@@ -13,7 +13,7 @@ Installation
 
 Carthage
 ```
-github "ericboxer/User-Defaults-Helper" >= 0.1.0
+github "ericboxer/User-Defaults-Helper" >= 0.1.1
 ```
 
 Ussage
