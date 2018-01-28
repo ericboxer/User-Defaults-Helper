@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FF587C6B1FC9BEA6008825D9"
-               BuildableName = "User_Defaults_Helper.framework"
-               BlueprintName = "User Defaults Helper"
+               BlueprintIdentifier = "FF38E34A1FD0EABD005E2E83"
+               BuildableName = "User_Defaults_Helper_iOS.framework"
+               BlueprintName = "User Defaults Helper iOS"
                ReferencedContainer = "container:User Defaults Helper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,15 +30,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FF587C6B1FC9BEA6008825D9"
-            BuildableName = "User_Defaults_Helper.framework"
-            BlueprintName = "User Defaults Helper"
-            ReferencedContainer = "container:User Defaults Helper.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -56,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FF587C6B1FC9BEA6008825D9"
-            BuildableName = "User_Defaults_Helper.framework"
-            BlueprintName = "User Defaults Helper"
+            BlueprintIdentifier = "FF38E34A1FD0EABD005E2E83"
+            BuildableName = "User_Defaults_Helper_iOS.framework"
+            BlueprintName = "User Defaults Helper iOS"
             ReferencedContainer = "container:User Defaults Helper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -74,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FF587C6B1FC9BEA6008825D9"
-            BuildableName = "User_Defaults_Helper.framework"
-            BlueprintName = "User Defaults Helper"
+            BlueprintIdentifier = "FF38E34A1FD0EABD005E2E83"
+            BuildableName = "User_Defaults_Helper_iOS.framework"
+            BlueprintName = "User Defaults Helper iOS"
             ReferencedContainer = "container:User Defaults Helper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

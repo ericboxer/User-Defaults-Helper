@@ -48,6 +48,7 @@ Todos
 - ~~Build Framework~~
 - Make Cocoapods Compatable
 - ~~Make Carthage Compatable~~
+- iOS scheme
 
 
 The MIT License (MIT)

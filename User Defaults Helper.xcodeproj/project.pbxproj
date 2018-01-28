@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF38E34F1FD0EABD005E2E83 /* User_Defaults_Helper_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = FF38E34D1FD0EABD005E2E83 /* User_Defaults_Helper_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF587C761FC9BEA6008825D9 /* User_Defaults_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF587C6C1FC9BEA6008825D9 /* User_Defaults_Helper.framework */; };
 		FF587C7D1FC9BEA6008825D9 /* User_Defaults_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = FF587C6F1FC9BEA6008825D9 /* User_Defaults_Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF587C871FC9BED8008825D9 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF587C861FC9BED8008825D9 /* UserDefaultsHelper.swift */; };
@@ -23,6 +24,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF38E34B1FD0EABD005E2E83 /* User_Defaults_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = User_Defaults_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF38E34D1FD0EABD005E2E83 /* User_Defaults_Helper_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User_Defaults_Helper_iOS.h; sourceTree = "<group>"; };
 		FF587C6C1FC9BEA6008825D9 /* User_Defaults_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = User_Defaults_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF587C6F1FC9BEA6008825D9 /* User_Defaults_Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User_Defaults_Helper.h; sourceTree = "<group>"; };
 		FF587C701FC9BEA6008825D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +34,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF38E3471FD0EABD005E2E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF587C681FC9BEA6008825D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,10 +59,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF00BD90201E4FA80008122E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FF587C701FC9BEA6008825D9 /* Info.plist */,
+				FF587C861FC9BED8008825D9 /* UserDefaultsHelper.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FF38E34C1FD0EABD005E2E83 /* User Defaults Helper iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FF38E34D1FD0EABD005E2E83 /* User_Defaults_Helper_iOS.h */,
+			);
+			path = "User Defaults Helper iOS";
+			sourceTree = "<group>";
+		};
 		FF587C621FC9BEA5008825D9 = {
 			isa = PBXGroup;
 			children = (
+				FF00BD90201E4FA80008122E /* Source */,
 				FF587C6E1FC9BEA6008825D9 /* User Defaults Helper */,
+				FF38E34C1FD0EABD005E2E83 /* User Defaults Helper iOS */,
 				FF587C6D1FC9BEA6008825D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +91,7 @@
 			children = (
 				FF587C6C1FC9BEA6008825D9 /* User_Defaults_Helper.framework */,
 				FF587C751FC9BEA6008825D9 /* User Defaults HelperTests.xctest */,
+				FF38E34B1FD0EABD005E2E83 /* User_Defaults_Helper.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,8 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				FF587C6F1FC9BEA6008825D9 /* User_Defaults_Helper.h */,
-				FF587C701FC9BEA6008825D9 /* Info.plist */,
-				FF587C861FC9BED8008825D9 /* UserDefaultsHelper.swift */,
 			);
 			path = "User Defaults Helper";
 			sourceTree = "<group>";
@@ -79,6 +107,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		FF38E3481FD0EABD005E2E83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF38E34F1FD0EABD005E2E83 /* User_Defaults_Helper_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF587C691FC9BEA6008825D9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,6 +126,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		FF38E34A1FD0EABD005E2E83 /* User Defaults Helper iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF38E3501FD0EABD005E2E83 /* Build configuration list for PBXNativeTarget "User Defaults Helper iOS" */;
+			buildPhases = (
+				FF38E3461FD0EABD005E2E83 /* Sources */,
+				FF38E3471FD0EABD005E2E83 /* Frameworks */,
+				FF38E3481FD0EABD005E2E83 /* Headers */,
+				FF38E3491FD0EABD005E2E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "User Defaults Helper iOS";
+			productName = "User Defaults Helper iOS";
+			productReference = FF38E34B1FD0EABD005E2E83 /* User_Defaults_Helper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		FF587C6B1FC9BEA6008825D9 /* User Defaults Helper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF587C801FC9BEA6008825D9 /* Build configuration list for PBXNativeTarget "User Defaults Helper" */;
@@ -136,6 +190,10 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Eric Boxer";
 				TargetAttributes = {
+					FF38E34A1FD0EABD005E2E83 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					FF587C6B1FC9BEA6008825D9 = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
@@ -161,11 +219,19 @@
 			targets = (
 				FF587C6B1FC9BEA6008825D9 /* User Defaults Helper */,
 				FF587C741FC9BEA6008825D9 /* User Defaults HelperTests */,
+				FF38E34A1FD0EABD005E2E83 /* User Defaults Helper iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FF38E3491FD0EABD005E2E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF587C6A1FC9BEA6008825D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -183,6 +249,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FF38E3461FD0EABD005E2E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF587C671FC9BEA6008825D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,6 +282,51 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		FF38E3511FD0EABD005E2E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ericboxer.User-Defaults-Helper-iOS";
+				PRODUCT_NAME = User_Defaults_Helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF38E3521FD0EABD005E2E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ericboxer.User-Defaults-Helper-iOS";
+				PRODUCT_NAME = User_Defaults_Helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		FF587C7E1FC9BEA6008825D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -333,7 +451,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "User Defaults Helper/Info.plist";
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ericboxer.User-Defaults-Helper";
@@ -356,7 +474,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "User Defaults Helper/Info.plist";
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ericboxer.User-Defaults-Helper";
@@ -397,6 +515,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF38E3501FD0EABD005E2E83 /* Build configuration list for PBXNativeTarget "User Defaults Helper iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF38E3511FD0EABD005E2E83 /* Debug */,
+				FF38E3521FD0EABD005E2E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FF587C661FC9BEA5008825D9 /* Build configuration list for PBXProject "User Defaults Helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
