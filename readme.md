@@ -13,29 +13,29 @@ Installation
 
 Carthage
 ```
-github "ericboxer/User-Defaults-Helper" >= 0.1.1
+github "ericboxer/User-Defaults-Helper" >= 0.1.2
 ```
 
 Ussage
 ---
 Instantiation. Use `.instance` to help keep UDH a singleton 
-```
+```swift
 let UDH = UserDefualtsHelper.instance
 ```
 
 Setting a particular value via subscript
-```
+```swift
 UDH[foo] = bar
 ```
 
 Getting a particular value via subscript
-```
+```swift
 print(UDH[foo])
 // Returns "bar"
 ```
 
 Clearing the saved settings
-```
+```swift
 UDH.removeDefaults()
 ```
 
